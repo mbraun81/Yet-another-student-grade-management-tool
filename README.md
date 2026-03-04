@@ -1,6 +1,6 @@
-# Schulnoten-Verwaltungstool
+# Kompetenzverwaltungstool
 
-Notenverwaltung für die Campus-Hebebrandschule in Hamburg. Gebaut mit Symfony und Doctrine ORM, authentifiziert über Linuxmuster.net (LDAP) mit verpflichtender 2FA.
+Kompetenzverwaltung für die Campus-Hebebrandschule in Hamburg. Gebaut mit Symfony und Doctrine ORM, authentifiziert über Linuxmuster.net (LDAP) mit verpflichtender 2FA.
 
 ## Voraussetzungen
 
@@ -12,7 +12,7 @@ Notenverwaltung für die Campus-Hebebrandschule in Hamburg. Gebaut mit Symfony u
 docker compose up -d --build
 ```
 
-Beim ersten Start werden die LDAP-Testdaten automatisch geseedet und die Datenbanken (`schulnoten` + `schulnoten_test`) angelegt.
+Beim ersten Start werden die LDAP-Testdaten automatisch geseedet und die Datenbanken (`schulkompetenzen` + `schulkompetenzen_test`) angelegt.
 
 ## Zugangsdaten (Entwicklung)
 
@@ -20,8 +20,8 @@ Beim ersten Start werden die LDAP-Testdaten automatisch geseedet und die Datenba
 |---------|-----|-------|----------|
 | Symfony App | http://localhost:8080 | mueller | lehrer2024 |
 | phpLdapAdmin | https://localhost:8081 | cn=admin,dc=linuxmuster,dc=lan | admin_dev_password |
-| pgAdmin | http://localhost:5050 | admin@schulnoten.dev | pgadmin_dev |
-| PostgreSQL | localhost:5433 | schulnoten | schulnoten_dev |
+| pgAdmin | http://localhost:5050 | admin@schulkompetenzen.dev | pgadmin_dev |
+| PostgreSQL | localhost:5433 | schulkompetenzen | schulkompetenzen_dev |
 
 Weitere Test-Accounts (Lehrer: `schmidt`, `fischer` — Schüler: `schueler1`, `schueler2`) siehe `.env.docker`.
 

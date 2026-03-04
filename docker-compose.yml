@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: schulnoten-app
+    container_name: schulkompetenzen-app
     ports:
       - "8080:80"
     volumes:
@@ -19,18 +19,18 @@ services:
 
   db:
     image: postgres:16-alpine
-    container_name: schulnoten-db
+    container_name: schulkompetenzen-db
     ports:
       - "5433:5432"
     environment:
-      POSTGRES_USER: schulnoten
-      POSTGRES_PASSWORD: schulnoten_dev
-      POSTGRES_DB: schulnoten
+      POSTGRES_USER: schulkompetenzen
+      POSTGRES_PASSWORD: schulkompetenzen_dev
+      POSTGRES_DB: schulkompetenzen
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./docker/postgres/init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U schulnoten"]
+      test: ["CMD-SHELL", "pg_isready -U schulkompetenzen"]
       interval: 5s
       timeout: 5s
       retries: 5
@@ -39,7 +39,7 @@ services:
 
   ldap:
     image: osixia/openldap:1.5.0
-    container_name: schulnoten-ldap
+    container_name: schulkompetenzen-ldap
     ports:
       - "389:389"
       - "636:636"
@@ -59,7 +59,7 @@ services:
 
   phpldapadmin:
     image: osixia/phpldapadmin:0.9.0
-    container_name: schulnoten-phpldapadmin
+    container_name: schulkompetenzen-phpldapadmin
     ports:
       - "8081:443"
     environment:
@@ -72,11 +72,11 @@ services:
 
   pgadmin:
     image: dpage/pgadmin4:8
-    container_name: schulnoten-pgadmin
+    container_name: schulkompetenzen-pgadmin
     ports:
       - "5050:80"
     environment:
-      PGADMIN_DEFAULT_EMAIL: admin@schulnoten.dev
+      PGADMIN_DEFAULT_EMAIL: admin@schulkompetenzen.dev
       PGADMIN_DEFAULT_PASSWORD: pgadmin_dev
     depends_on:
       - db

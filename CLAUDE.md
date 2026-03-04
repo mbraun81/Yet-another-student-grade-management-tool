@@ -4,14 +4,14 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Schulnoten-Verwaltungstool (student grade management tool) for the Campus-Hebebrandschule in Hamburg. Built with Symfony and Doctrine ORM. Licensed under MIT.
+Kompetenzverwaltungstool (student competency management tool) for the Campus-Hebebrandschule in Hamburg. Built with Symfony and Doctrine ORM. Licensed under MIT.
 
 ## Tech Stack
 
 - **Framework**: Symfony (PHP)
 - **ORM**: Doctrine
 - **Authentication**: Linuxmuster.net LDAP integration for teacher accounts, with mandatory 2FA
-- **Language**: German-language UI and domain (Schüler, Noten, Lehrer, Klassen, Fächer)
+- **Language**: German-language UI and domain (Schüler, Kompetenzen, Lehrer, Klassen, Fächer)
 
 ## Common Commands
 
@@ -46,7 +46,7 @@ php bin/console lint:container
 ## Architecture Notes
 
 - **Authentication flow**: Teachers authenticate via Linuxmuster.net (LDAP), then complete 2FA. No local password storage for teachers.
-- **Doctrine entities** represent the school domain: students (Schüler), grades (Noten), teachers (Lehrer), classes (Klassen), subjects (Fächer).
+- **Doctrine entities** represent the school domain: students (Schüler), competencies (Kompetenzen), teachers (Lehrer), classes (Klassen), subjects (Fächer).
 - Symfony standard directory layout: `src/Controller/`, `src/Entity/`, `src/Repository/`, `src/Service/`, `config/`, `templates/`, `migrations/`.
 
 ## Conventions
