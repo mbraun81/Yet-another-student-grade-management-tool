@@ -1,0 +1,103 @@
+# =============================================================================
+# Linuxmuster.net v7 Verzeichnisstruktur (Simulation)
+# Base DN: DC=linuxmuster,DC=lan
+# =============================================================================
+
+# ---- Globale OUs ----
+dn: OU=GLOBAL,DC=linuxmuster,DC=lan
+objectClass: organizationalUnit
+ou: GLOBAL
+
+dn: OU=Management,OU=GLOBAL,DC=linuxmuster,DC=lan
+objectClass: organizationalUnit
+ou: Management
+
+# ---- Bind-User fuer die Applikation ----
+dn: CN=binduser,OU=Management,OU=GLOBAL,DC=linuxmuster,DC=lan
+objectClass: inetOrgPerson
+cn: binduser
+sn: Bind User
+uid: binduser
+userPassword: bind_dev_password
+
+# ---- Schulstruktur ----
+dn: OU=SCHOOLS,DC=linuxmuster,DC=lan
+objectClass: organizationalUnit
+ou: SCHOOLS
+
+dn: OU=default-school,OU=SCHOOLS,DC=linuxmuster,DC=lan
+objectClass: organizationalUnit
+ou: default-school
+
+# ---- Lehrer ----
+dn: OU=Teachers,OU=default-school,OU=SCHOOLS,DC=linuxmuster,DC=lan
+objectClass: organizationalUnit
+ou: Teachers
+
+dn: CN=teachers,OU=Teachers,OU=default-school,OU=SCHOOLS,DC=linuxmuster,DC=lan
+objectClass: groupOfNames
+cn: teachers
+member: uid=mueller,OU=Teachers,OU=default-school,OU=SCHOOLS,DC=linuxmuster,DC=lan
+member: uid=schmidt,OU=Teachers,OU=default-school,OU=SCHOOLS,DC=linuxmuster,DC=lan
+member: uid=fischer,OU=Teachers,OU=default-school,OU=SCHOOLS,DC=linuxmuster,DC=lan
+
+dn: uid=mueller,OU=Teachers,OU=default-school,OU=SCHOOLS,DC=linuxmuster,DC=lan
+objectClass: inetOrgPerson
+cn: Hans Mueller
+sn: Mueller
+givenName: Hans
+uid: mueller
+mail: mueller@linuxmuster.lan
+description: teacher
+userPassword: lehrer2024
+
+dn: uid=schmidt,OU=Teachers,OU=default-school,OU=SCHOOLS,DC=linuxmuster,DC=lan
+objectClass: inetOrgPerson
+cn: Anna Schmidt
+sn: Schmidt
+givenName: Anna
+uid: schmidt
+mail: schmidt@linuxmuster.lan
+description: teacher
+userPassword: lehrer2024
+
+dn: uid=fischer,OU=Teachers,OU=default-school,OU=SCHOOLS,DC=linuxmuster,DC=lan
+objectClass: inetOrgPerson
+cn: Peter Fischer
+sn: Fischer
+givenName: Peter
+uid: fischer
+mail: fischer@linuxmuster.lan
+description: teacher
+userPassword: lehrer2024
+
+# ---- Schueler ----
+dn: OU=Students,OU=default-school,OU=SCHOOLS,DC=linuxmuster,DC=lan
+objectClass: organizationalUnit
+ou: Students
+
+dn: CN=students,OU=Students,OU=default-school,OU=SCHOOLS,DC=linuxmuster,DC=lan
+objectClass: groupOfNames
+cn: students
+member: uid=schueler1,OU=Students,OU=default-school,OU=SCHOOLS,DC=linuxmuster,DC=lan
+member: uid=schueler2,OU=Students,OU=default-school,OU=SCHOOLS,DC=linuxmuster,DC=lan
+
+dn: uid=schueler1,OU=Students,OU=default-school,OU=SCHOOLS,DC=linuxmuster,DC=lan
+objectClass: inetOrgPerson
+cn: Max Mustermann
+sn: Mustermann
+givenName: Max
+uid: schueler1
+mail: schueler1@linuxmuster.lan
+description: student
+userPassword: schueler2024
+
+dn: uid=schueler2,OU=Students,OU=default-school,OU=SCHOOLS,DC=linuxmuster,DC=lan
+objectClass: inetOrgPerson
+cn: Lisa Beispiel
+sn: Beispiel
+givenName: Lisa
+uid: schueler2
+mail: schueler2@linuxmuster.lan
+description: student
+userPassword: schueler2024

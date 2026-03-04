@@ -50,3 +50,10 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+# Environment overrides
+.env.local
+.env.*.local
+
+# Docker volumes
+docker-volumes/

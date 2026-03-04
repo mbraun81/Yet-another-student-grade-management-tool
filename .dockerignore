@@ -1,0 +1,15 @@
+.git
+.github
+.claude
+.idea
+.vscode
+var/cache
+var/log
+var/sessions
+vendor
+node_modules
+docker-compose.yml
+.env.local
+.env.*.local
+*.md
+LICENSE

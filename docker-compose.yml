@@ -1,0 +1,94 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: schulnoten-app
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html:cached
+      - vendor_data:/var/www/html/vendor
+    depends_on:
+      db:
+        condition: service_healthy
+    env_file:
+      - .env.docker
+    networks:
+      - app-network
+
+  db:
+    image: postgres:16-alpine
+    container_name: schulnoten-db
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_USER: schulnoten
+      POSTGRES_PASSWORD: schulnoten_dev
+      POSTGRES_DB: schulnoten
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./docker/postgres/init-db.sh:/docker-entrypoint-initdb.d/init-db.sh
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U schulnoten"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+    networks:
+      - app-network
+
+  ldap:
+    image: osixia/openldap:1.5.0
+    container_name: schulnoten-ldap
+    ports:
+      - "389:389"
+      - "636:636"
+    environment:
+      LDAP_ORGANISATION: "Linuxmuster"
+      LDAP_DOMAIN: "linuxmuster.lan"
+      LDAP_ADMIN_PASSWORD: "admin_dev_password"
+      LDAP_TLS: "false"
+      LDAP_TLS_VERIFY_CLIENT: "never"
+      LDAP_SEED_INTERNAL_LDIF_PATH: /ldif-seed
+    volumes:
+      - ldap_data:/var/lib/ldap
+      - ldap_config:/etc/ldap/slapd.d
+      - ./docker/ldap/bootstrap.ldif:/ldif-seed/bootstrap.ldif:ro
+    networks:
+      - app-network
+
+  phpldapadmin:
+    image: osixia/phpldapadmin:0.9.0
+    container_name: schulnoten-phpldapadmin
+    ports:
+      - "8081:443"
+    environment:
+      PHPLDAPADMIN_LDAP_HOSTS: ldap
+      PHPLDAPADMIN_HTTPS: "true"
+    depends_on:
+      - ldap
+    networks:
+      - app-network
+
+  pgadmin:
+    image: dpage/pgadmin4:8
+    container_name: schulnoten-pgadmin
+    ports:
+      - "5050:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@schulnoten.dev
+      PGADMIN_DEFAULT_PASSWORD: pgadmin_dev
+    depends_on:
+      - db
+    networks:
+      - app-network
+
+volumes:
+  postgres_data:
+  ldap_data:
+  ldap_config:
+  vendor_data:
+
+networks:
+  app-network:
+    driver: bridge

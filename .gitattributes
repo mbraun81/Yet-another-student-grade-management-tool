@@ -1,0 +1,3 @@
+# Ensure consistent line endings for shell scripts and LDIF files
+*.sh text eol=lf
+*.ldif text eol=lf
