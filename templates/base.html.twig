@@ -26,9 +26,12 @@
     </div>
 </header>
 
-<main class="ch-main">
-    {% block body %}{% endblock %}
-</main>
+<div class="ch-layout">
+    {% block sidebar %}{% endblock %}
+    <main class="ch-main">
+        {% block body %}{% endblock %}
+    </main>
+</div>
 
 <footer class="ch-footer">
     <div class="ch-footer__inner">
