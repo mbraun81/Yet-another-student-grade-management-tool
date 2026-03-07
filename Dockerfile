@@ -4,7 +4,7 @@
 FROM composer:2 AS composer
 
 # ---- App image ----
-FROM php:8.2-fpm-bookworm
+FROM php:8.4-fpm-bookworm
 
 # System packages
 RUN apt-get update && apt-get install -y --no-install-recommends \

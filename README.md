@@ -1,6 +1,6 @@
 # Kompetenzverwaltungstool
 
-Kompetenzverwaltung für die Campus-Hebebrandschule in Hamburg. Gebaut mit Symfony und Doctrine ORM, authentifiziert über Linuxmuster.net (LDAP) mit verpflichtender 2FA.
+Kompetenzverwaltung für die Campus-Hebebrandschule in Hamburg. Gebaut mit Symfony und Doctrine ORM, authentifiziert über Linuxmuster.net (LDAP) mit verpflichtender 2FA (TOTP).
 
 ## Voraussetzungen
 
@@ -25,6 +25,10 @@ Beim ersten Start werden die LDAP-Testdaten automatisch geseedet und die Datenba
 
 Weitere Test-Accounts (Lehrer: `schmidt`, `fischer` — Schüler: `schueler1`, `schueler2`) siehe `.env.docker`.
 
+## Authentifizierung
+
+Lehrer melden sich mit ihrem Linuxmuster.net-Konto an (LDAP-Bind gegen `OU=Teachers`). Beim ersten Login wird automatisch ein TOTP-Secret generiert und ein QR-Code zur Einrichtung in einer Authenticator-App angezeigt. Ab dem zweiten Login ist der TOTP-Code verpflichtend.
+
 ## Häufige Befehle
 
 ```bash
@@ -34,8 +38,13 @@ docker compose exec app composer install
 # Datenbank-Migrationen ausführen
 docker compose exec app php bin/console doctrine:migrations:migrate
 
-# Tests ausführen
+# Tests ausführen (alle)
 docker compose exec app php bin/phpunit
+# oder unter Windows:
+bin\docker-run-tests.bat
+
+# Nur LDAP-Integrationstests
+docker compose exec app php bin/phpunit tests/Security/LehrerAuthTest.php --no-coverage
 
 # Cache leeren
 docker compose exec app php bin/console cache:clear
@@ -54,10 +63,20 @@ docker compose down -v
 │   ├── ldap/bootstrap.ldif      # LDAP-Testdaten (Linuxmuster.net v7)
 │   ├── nginx/default.conf       # Nginx-Konfiguration
 │   └── postgres/init-db.sh      # Erstellt Test-Datenbank
+├── src/
+│   ├── Controller/              # DashboardController, SecurityController (2FA-Setup)
+│   ├── Entity/Lehrer.php        # User-Entity (TOTP-Interface)
+│   ├── Repository/
+│   └── Security/                # LdapAuthService, LdapAuthenticator
+├── templates/
+│   ├── security/                # Login, 2FA-Setup
+│   └── dashboard/
+├── tests/
+│   └── Security/LehrerAuthTest.php  # LDAP-Integrationstests
 ├── docker-compose.yml           # 5 Services: app, db, ldap, phpldapadmin, pgadmin
-├── Dockerfile                   # PHP 8.2-FPM + Nginx + Supervisord
+├── Dockerfile                   # PHP 8.4-FPM + Nginx + Supervisord
 ├── .env.docker                  # Entwicklungs-Konfiguration
-└── ...                          # Symfony-Standardstruktur (src/, config/, templates/)
+└── ...                          # Symfony-Standardstruktur (config/, migrations/)
 ```
 
 ## Lizenz

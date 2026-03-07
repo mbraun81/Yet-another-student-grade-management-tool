@@ -1,0 +1,135 @@
+<?php
+
+declare(strict_types=1);
+
+namespace App\Entity;
+
+use App\Repository\LehrerRepository;
+use Doctrine\ORM\Mapping as ORM;
+use Scheb\TwoFactorBundle\Model\Totp\TotpConfiguration;
+use Scheb\TwoFactorBundle\Model\Totp\TotpConfigurationInterface;
+use Scheb\TwoFactorBundle\Model\Totp\TwoFactorInterface;
+use Symfony\Component\Security\Core\User\EquatableInterface;
+use Symfony\Component\Security\Core\User\UserInterface;
+
+#[ORM\Entity(repositoryClass: LehrerRepository::class)]
+#[ORM\Table(name: 'lehrer')]
+class Lehrer implements UserInterface, EquatableInterface, TwoFactorInterface
+{
+    #[ORM\Id]
+    #[ORM\GeneratedValue]
+    #[ORM\Column]
+    private ?int $id = null;
+
+    #[ORM\Column(length: 255, unique: true)]
+    private string $ldapUsername;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $totpSecret = null;
+
+    #[ORM\Column]
+    private bool $totpEnabled = false;
+
+    #[ORM\Column(type: 'json')]
+    private array $roles = ['ROLE_TEACHER'];
+
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getLdapUsername(): string
+    {
+        return $this->ldapUsername;
+    }
+
+    public function setLdapUsername(string $ldapUsername): static
+    {
+        $this->ldapUsername = $ldapUsername;
+
+        return $this;
+    }
+
+    public function getTotpSecret(): ?string
+    {
+        return $this->totpSecret;
+    }
+
+    public function setTotpSecret(?string $totpSecret): static
+    {
+        $this->totpSecret = $totpSecret;
+
+        return $this;
+    }
+
+    public function isTotpEnabled(): bool
+    {
+        return $this->totpEnabled;
+    }
+
+    public function setTotpEnabled(bool $totpEnabled): static
+    {
+        $this->totpEnabled = $totpEnabled;
+
+        return $this;
+    }
+
+    public function getRoles(): array
+    {
+        return array_unique($this->roles);
+    }
+
+    public function setRoles(array $roles): static
+    {
+        $this->roles = $roles;
+
+        return $this;
+    }
+
+    // UserInterface
+
+    public function getUserIdentifier(): string
+    {
+        return $this->ldapUsername;
+    }
+
+    public function eraseCredentials(): void
+    {
+        // No local credentials to erase
+    }
+
+    public function isEqualTo(UserInterface $user): bool
+    {
+        if (!$user instanceof self) {
+            return false;
+        }
+
+        return $this->ldapUsername === $user->ldapUsername;
+    }
+
+    // TwoFactorInterface (TOTP)
+
+    public function isTotpAuthenticationEnabled(): bool
+    {
+        return $this->totpEnabled && $this->totpSecret !== null;
+    }
+
+    public function getTotpAuthenticationUsername(): string|null
+    {
+        return $this->ldapUsername;
+    }
+
+    public function getTotpAuthenticationConfiguration(): TotpConfigurationInterface|null
+    {
+        if ($this->totpSecret === null) {
+            return null;
+        }
+
+        return new TotpConfiguration(
+            $this->totpSecret,
+            TotpConfiguration::ALGORITHM_SHA1,
+            30,
+            6,
+        );
+    }
+}

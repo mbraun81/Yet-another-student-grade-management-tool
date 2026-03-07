@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dashboard – Schulkompetenzen{% endblock %}
+
+{% block body %}
+<div style="max-width:800px;margin:40px auto;font-family:sans-serif;">
+    <h1>Willkommen, {{ app.user.userIdentifier }}!</h1>
+    <p><a href="{{ path('app_logout') }}">Abmelden</a></p>
+</div>
+{% endblock %}
