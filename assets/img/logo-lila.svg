@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Ebene_1" data-name="Ebene 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248.67 391.31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #b63880;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #1d1d1b;
+        font-family: KronaOne-Regular, 'Krona One';
+        font-size: 101.62px;
+        letter-spacing: .04em;
+      }
+
+      .cls-2 {
+        fill: #570073;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(0 365.01)"><tspan x="0" y="0">csh</tspan></text>
+  <g>
+    <path class="cls-2" d="m81.18,92.75h-40.95v58.7c0,36.36,17.25,58.07,46.14,58.07h30.82v-75.19c0-28.72-18.09-41.58-36.01-41.58Z"/>
+    <path class="cls-1" d="m148.54,0c-34.98,0-63.34,28.36-63.34,63.34v20.91c25.49.85,40.2,21.27,40.2,46.61v78.84c43.16-4.61,76.78-41.13,76.78-85.52V0h-53.64Z"/>
+  </g>
+</svg>

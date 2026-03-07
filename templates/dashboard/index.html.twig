@@ -1,10 +1,15 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Dashboard – Schulkompetenzen{% endblock %}
+{% block title %}Dashboard{% endblock %}
+
+{% block header_nav %}
+<nav class="ch-header__nav">
+    <a href="{{ path('app_logout') }}">Abmelden</a>
+</nav>
+{% endblock %}
 
 {% block body %}
-<div style="max-width:800px;margin:40px auto;font-family:sans-serif;">
-    <h1>Willkommen, {{ app.user.userIdentifier }}!</h1>
-    <p><a href="{{ path('app_logout') }}">Abmelden</a></p>
+<div class="ch-card">
+    <h1 style="margin-top:0;">Willkommen, {{ app.user.userIdentifier }}!</h1>
 </div>
 {% endblock %}

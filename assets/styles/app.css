@@ -1,3 +1,239 @@
+@font-face {
+  font-family: 'Krona One';
+  src: url('../fonts/Krona_One/KronaOne-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --ch-green:   #bbef6d;
+  --ch-teal:    #00da88;
+  --ch-blue:    #0f2d7f;
+  --ch-purple:  #570073;
+  --ch-pink:    #b63880;
+  --ch-white:   #ffffff;
+  --ch-text:    #1a1a1a;
+  --ch-muted:   #444;
+  --ch-border:  #c8e89a;
+  --ch-error-bg:     #fef2f2;
+  --ch-error-border: #dc2626;
+  --ch-error-text:   #dc2626;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: var(--ch-green); }
+::-webkit-scrollbar-thumb { background: var(--ch-teal); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: #00b872; }
+* { scrollbar-color: var(--ch-teal) var(--ch-green); scrollbar-width: thin; }
+
 body {
-    background-color: skyblue;
+  background: var(--ch-green);
+  font-family: Arial, sans-serif;
+  color: var(--ch-text);
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* ── Header ── */
+.ch-header {
+  background: var(--ch-white);
+  border-bottom: 2px solid var(--ch-green);
+}
+
+.ch-header__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: .6rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ch-header__brand {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  text-decoration: none;
+  color: var(--ch-blue);
+}
+
+.ch-header__logo {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.ch-header__wordmark {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.ch-header__name {
+  font-family: 'Krona One', Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  color: var(--ch-blue);
+  letter-spacing: .01em;
+}
+
+.ch-header__sub {
+  font-size: .75rem;
+  color: var(--ch-muted);
+}
+
+.ch-header__nav {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.ch-header__nav a {
+  color: var(--ch-blue);
+  text-decoration: none;
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+.ch-header__nav a:hover {
+  color: var(--ch-purple);
+  text-decoration: underline;
+}
+
+/* ── Main ── */
+.ch-main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ── Headings ── */
+h1, h2, h3 {
+  font-family: 'Krona One', Arial, sans-serif;
+  font-weight: normal;
+}
+
+/* ── Card ── */
+.ch-card {
+  background: var(--ch-white);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(15, 45, 127, .12);
+  padding: 2rem;
+}
+
+.ch-card--narrow {
+  max-width: 400px;
+  margin: 3rem auto;
+}
+
+/* ── Forms ── */
+.ch-form__label {
+  display: block;
+  margin-bottom: .25rem;
+  font-weight: bold;
+  font-size: .9rem;
+}
+
+.ch-form__input {
+  width: 100%;
+  padding: .5rem .75rem;
+  border: 1px solid var(--ch-border);
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  color: var(--ch-text);
+}
+
+.ch-form__input:focus {
+  outline: 2px solid var(--ch-teal);
+  outline-offset: 1px;
+  border-color: var(--ch-teal);
+}
+
+.ch-form__group {
+  margin-bottom: 1rem;
+}
+
+/* ── Buttons ── */
+.ch-btn {
+  width: 100%;
+  padding: .6rem;
+  background: var(--ch-blue);
+  color: var(--ch-white);
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+}
+
+.ch-btn:hover {
+  background: #0a1f5c;
+}
+
+.ch-btn--confirm {
+  background: var(--ch-teal);
+  color: var(--ch-text);
+}
+
+.ch-btn--confirm:hover {
+  background: #00b872;
+}
+
+/* ── Alerts ── */
+.ch-alert--error {
+  background: var(--ch-error-bg);
+  border: 1px solid var(--ch-error-border);
+  color: var(--ch-error-text);
+  padding: .75rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* ── 2FA specific ── */
+.ch-totp-qr {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.ch-totp-details {
+  margin-bottom: 1.5rem;
+}
+
+.ch-totp-details summary {
+  cursor: pointer;
+  color: var(--ch-blue);
+}
+
+.ch-totp-secret {
+  margin-top: .5rem;
+  font-family: monospace;
+  word-break: break-all;
+  background: #f4f4f4;
+  padding: .5rem;
+  border-radius: 4px;
+}
+
+.ch-form__input--otp {
+  font-size: 1.5rem;
+  letter-spacing: .3em;
+  text-align: center;
+}
+
+/* ── Footer ── */
+.ch-footer {
+  background: var(--ch-blue);
+  color: var(--ch-white);
+  margin-top: 4rem;
+}
+
+.ch-footer__inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 1rem;
+  font-size: .85rem;
+  opacity: .9;
 }

@@ -1,17 +1,40 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
-        {% block stylesheets %}
-        {% endblock %}
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Schulkompetenzen{% endblock %} – Campus Hebebrandstraße</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>🏫</text></svg>">
+    {% block stylesheets %}{% endblock %}
 
-        {% block javascripts %}
-            {% block importmap %}{{ importmap('app') }}{% endblock %}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+    {% block javascripts %}
+        {% block importmap %}{{ importmap('app') }}{% endblock %}
+    {% endblock %}
+</head>
+<body>
+
+<header class="ch-header">
+    <div class="ch-header__inner">
+        <a href="{% if app.user %}{{ path('app_dashboard') }}{% else %}{{ path('app_login') }}{% endif %}" class="ch-header__brand">
+            <img src="{{ asset('img/logo-grün.svg') }}" alt="Campus Hebebrandstraße Logo" class="ch-header__logo">
+            <div class="ch-header__wordmark">
+                <span class="ch-header__name">campus hebebrandstraße</span>
+                <span class="ch-header__sub">Schulkompetenzen</span>
+            </div>
+        </a>
+        {% block header_nav %}{% endblock %}
+    </div>
+</header>
+
+<main class="ch-main">
+    {% block body %}{% endblock %}
+</main>
+
+<footer class="ch-footer">
+    <div class="ch-footer__inner">
+        <span>Campus Hebebrandstraße &middot; Kellinghusenstraße 11, 20249 Hamburg</span>
+    </div>
+</footer>
+
+</body>
 </html>

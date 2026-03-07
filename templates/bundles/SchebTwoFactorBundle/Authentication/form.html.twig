@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Zwei-Faktor-Authentifizierung{% endblock %}
+
+{% block body %}
+<div class="ch-card ch-card--narrow">
+    <h1 style="text-align:center;margin-top:0;margin-bottom:.5rem;">Code eingeben</h1>
+    <p style="text-align:center;color:var(--ch-muted);margin-bottom:2rem;">
+        Geben Sie den 6-stelligen Code aus Ihrer Authenticator-App ein.
+    </p>
+
+    {% if authenticationError %}
+        <div class="ch-alert--error">
+            {{ authenticationError|trans(authenticationErrorData, 'SchebTwoFactorBundle') }}
+        </div>
+    {% endif %}
+
+    <form method="post" action="{{ checkPathUrl ?: path(checkPathRoute) }}">
+        {% if isCsrfProtectionEnabled %}
+            <input type="hidden" name="{{ csrfParameterName }}" value="{{ csrf_token(csrfTokenId) }}">
+        {% endif %}
+
+        <div class="ch-form__group">
+            <label for="_auth_code" class="ch-form__label">Bestätigungscode</label>
+            <input
+                id="_auth_code"
+                type="text"
+                name="{{ authCodeParameterName }}"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                autocomplete="one-time-code"
+                maxlength="6"
+                placeholder="123456"
+                autofocus
+                class="ch-form__input ch-form__input--otp"
+            >
+        </div>
+
+        {% if displayTrustedOption %}
+            <div class="ch-form__group" style="display:flex;align-items:center;gap:.5rem;">
+                <input id="_trusted" type="checkbox" name="{{ trustedParameterName }}">
+                <label for="_trusted" style="margin:0;">{{ 'trusted'|trans({}, 'SchebTwoFactorBundle') }}</label>
+            </div>
+        {% endif %}
+
+        <button type="submit" class="ch-btn ch-btn--confirm">Anmelden</button>
+    </form>
+
+    <p style="text-align:center;margin-top:1.25rem;margin-bottom:0;">
+        <a href="{{ logoutPath }}" style="color:var(--ch-muted);font-size:.85rem;">Abbrechen und abmelden</a>
+    </p>
+</div>
+{% endblock %}

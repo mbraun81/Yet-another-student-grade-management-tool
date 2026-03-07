@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="150mm"
+   height="80mm"
+   viewBox="0 0 150 80"
+   version="1.1"
+   id="svg259"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="cloud-logo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview261"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.76791526"
+     inkscape:cx="205.10075"
+     inkscape:cy="332.06789"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1016"
+     inkscape:window-y="197"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs256" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-5.162761,-5.5073082)">
+    <rect
+       style="fill:#f9f9f9;stroke:#0f2d7f;stroke-width:0.621387;paint-order:stroke fill markers"
+       id="rect617"
+       width="149.37862"
+       height="79.378616"
+       x="5.4734545"
+       y="5.8180017" />
+    <text
+       class="st0 st1 st2 st3"
+       id="text4"
+       style="font-size:26.887px;font-family:KronaOne-Regular;letter-spacing:0.79375;fill:#b0fc90;stroke:#0f2d7f;stroke-width:0.264583;stroke-opacity:1"
+       x="13.167847"
+       y="79.851738">csh</text>
+    <g
+       id="g10"
+       transform="matrix(0.23499029,0,0,0.23499029,4.3508109,10.480621)">
+	<path
+   class="st4"
+   d="m 81.2,92.8 h -41 v 58.7 c 0,36.4 17.2,58.1 46.1,58.1 h 30.8 v -75.2 c 0.1,-28.8 -18,-41.7 -35.9,-41.6 z"
+   id="path6"
+   style="fill:#00da88;stroke:#0f2d7f;stroke-opacity:1"
+   inkscape:label="path6" />
+
+	<path
+   class="st5"
+   d="m 148.5,0 c -35,0 -63.3,28.4 -63.3,63.3 v 20.9 c 25.5,0.8 40.2,21.3 40.2,46.6 v 78.8 c 43.2,-4.6 76.8,-41.1 76.8,-85.5 V 0 Z"
+   id="path8"
+   style="fill:#bbef6d;stroke:#0f2d7f;stroke-opacity:1" />
+
+</g>
+    <text
+       xml:space="preserve"
+       style="font-size:12.7px;font-family:'Krona One';-inkscape-font-specification:'Krona One, Normal';fill:#00da88;fill-opacity:1;stroke:#0f2d7f;stroke-width:0.7;paint-order:stroke fill markers"
+       x="66.153137"
+       y="79.590485"
+       id="text513"><tspan
+         sodipodi:role="line"
+         id="tspan511"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:19.7556px;font-family:'Krona One';-inkscape-font-specification:'Krona One, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#00da88;fill-opacity:1;stroke-width:0.7"
+         x="66.153137"
+         y="79.590485">Cloud</tspan></text>
+    <path
+       opacity="1"
+       fill="#1e3050"
+       d="m 78.322848,40.503591 c 0,6.210905 5.03906,11.249967 11.24997,11.249967 h 28.750052 c 5.52341,0 9.99998,-4.476573 9.99998,-9.999982 0,-4.836006 -3.43748,-8.875003 -7.99995,-9.796925 0.32032,-0.836222 0.49985,-1.750018 0.49985,-2.703122 0,-4.140666 -3.35944,-7.500009 -7.50001,-7.500009 -1.53912,0 -2.97657,0.468662 -4.1641,1.265671 -2.16407,-3.750052 -6.20316,-6.265709 -10.835921,-6.265709 -6.906341,0 -12.500051,5.593802 -12.500051,12.500047 0,0.210709 0.008,0.421418 0.0189,0.633072 -4.375,1.53912 -7.5157,5.710968 -7.5157,10.617273 z"
+       id="path983"
+       style="fill:#00da88;fill-opacity:1;stroke:#0f2d7f;stroke-width:0.378;stroke-dasharray:none;stroke-opacity:1" />
+  </g>
+</svg>

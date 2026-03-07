@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="50.148254mm"
+   height="50.148254mm"
+   viewBox="0 0 50.148254 50.148254"
+   version="1.1"
+   id="svg514"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   sodipodi:docname="cloud-logo-ios.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview516"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.76791526"
+     inkscape:cx="115.24709"
+     inkscape:cy="388.06365"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="1016"
+     inkscape:window-y="197"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g10" />
+  <defs
+     id="defs511" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-29.015417,-45.898247)">
+    <rect
+       style="fill:#ffffff;stroke:#00da88;stroke-width:0.5;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke fill markers"
+       id="rect635"
+       width="49.648254"
+       height="49.648254"
+       x="29.265417"
+       y="46.148247" />
+    <g
+       id="g10"
+       transform="matrix(0.15465865,0,0,0.15812594,35.780351,50.236528)">
+      <path
+         class="st4"
+         d="m 81.2,92.8 h -41 v 58.7 c 0,36.4 17.2,58.1 46.1,58.1 h 30.8 v -75.2 c 0.1,-28.8 -18,-41.7 -35.9,-41.6 z"
+         id="path6"
+         style="fill:#00da88;stroke:#0f2d7f;stroke-opacity:1"
+         inkscape:label="path6" />
+      <path
+         class="st5"
+         d="m 148.5,0 c -35,0 -63.3,28.4 -63.3,63.3 v 20.9 c 25.5,0.8 40.2,21.3 40.2,46.6 v 78.8 c 43.2,-4.6 76.8,-41.1 76.8,-85.5 V 0 Z"
+         id="path8"
+         style="fill:#bbef6d;stroke:#0f2d7f;stroke-opacity:1" />
+      <text
+         class="st0 st1 st2 st3"
+         id="text4"
+         style="font-size:26.887px;font-family:KronaOne-Regular;letter-spacing:0.79375;fill:#b0fc90;stroke:#0f2d7f;stroke-width:0.264583;stroke-opacity:1"
+         x="32.104809"
+         y="91.738617"
+         transform="matrix(6.4658524,0,0,6.3240731,-231.35047,-317.69947)">csh</text>
+    </g>
+  </g>
+</svg>
