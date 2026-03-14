@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48.770046mm"
+   height="34.821003mm"
+   viewBox="0 0 48.770046 34.821003"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="Mathe1.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="mint-fächer.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="0.72426347"
+     inkscape:cx="230.57907"
+     inkscape:cy="547.45271"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-12.787307,-97.329053)">
+    <g
+       id="g7"
+       inkscape:export-filename="Inf1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#53793d;fill-opacity:1;stroke:#274224;stroke-width:0.605224;stroke-opacity:1"
+         id="rect9-938-6"
+         width="48.164822"
+         height="34.215775"
+         x="13.089919"
+         y="97.631668" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'Krona One';-inkscape-font-specification:'Krona One';fill:#274224;fill-opacity:1;stroke:none;stroke-width:0.465"
+         x="17.781866"
+         y="129.2274"
+         id="text11-0-9"><tspan
+           sodipodi:role="line"
+           style="font-size:5.64444px;fill:#274224;fill-opacity:1;stroke:none;stroke-width:0.465"
+           x="17.781866"
+           y="129.2274"
+           id="tspan6">Informatik</tspan></text>
+      <path
+         d="m 28.150795,105.83329 c 0,-1.42819 1.060537,-2.58937 2.364958,-2.58937 h 14.189658 c 1.304377,0 2.364912,1.16118 2.364912,2.58937 v 10.35739 H 44.705411 V 105.83329 H 30.515753 v 10.35739 h -2.364958 z m -2.364958,12.42881 c 0,-0.42864 0.31776,-0.7768 0.709482,-0.7768 h 22.230479 c 0.391502,0 0.709483,0.34791 0.709483,0.7768 0,1.71543 -1.271169,3.10721 -2.837928,3.10721 H 28.623769 c -1.566763,0 -2.837932,-1.39178 -2.837932,-3.10721 z m 10.383568,-7.85701 -1.145496,1.25419 1.145496,1.25424 c 0.347255,0.38021 0.347255,0.99528 0,1.37153 -0.347256,0.37628 -0.908987,0.3802 -1.252668,0 l -1.773685,-1.94199 c -0.347257,-0.38021 -0.347257,-0.99528 0,-1.37157 l 1.773685,-1.94198 c 0.347257,-0.3802 0.909032,-0.3802 1.252668,0 0.343679,0.3802 0.347255,0.99527 0,1.37153 z m 4.138688,-1.37558 1.773685,1.94198 c 0.347254,0.38021 0.347254,0.99529 0,1.37157 l -1.773685,1.94199 c -0.347257,0.3802 -0.909034,0.3802 -1.252713,0 -0.343678,-0.38022 -0.347254,-0.99529 0,-1.37153 l 1.145544,-1.25424 -1.145544,-1.25419 c -0.347254,-0.3802 -0.347254,-0.99529 0,-1.37152 0.347253,-0.37629 0.909033,-0.38021 1.252713,0 z"
+         id="path2058"
+         style="fill:#274224;fill-opacity:1;stroke-width:0.0386656" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48.770054mm"
+   height="34.820999mm"
+   viewBox="0 0 48.770054 34.820999"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="Mathe1.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="gesellschaft-sonstiges.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0242632"
+     inkscape:cx="310.46707"
+     inkscape:cy="274.34354"
+     inkscape:window-width="1510"
+     inkscape:window-height="1000"
+     inkscape:window-x="401"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-157.19878,-2.9493364)">
+    <g
+       id="g31"
+       transform="translate(145.43177,-87.569043)">
+      <rect
+         style="fill:#4b95af;fill-opacity:1;stroke:#0f2d7f;stroke-width:0.605224;stroke-opacity:1"
+         id="rect9-938"
+         width="48.164822"
+         height="34.215775"
+         x="12.06963"
+         y="90.820992" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'Krona One';-inkscape-font-specification:'Krona One';fill:#0f2d7f;fill-opacity:1;stroke:none;stroke-width:0.465"
+         x="16.998808"
+         y="122.70066"
+         id="text11-6"><tspan
+           sodipodi:role="line"
+           id="tspan11-39"
+           style="font-size:5.64444px;fill:#0f2d7f;fill-opacity:1;stroke:none;stroke-width:0.465"
+           x="16.998808"
+           y="122.70066">Reli/Philo</tspan></text>
+      <path
+         d="m 33.381617,99.407037 c 0.523863,0.642323 1.159962,1.167513 1.85217,1.594463 0.969129,0.59697 2.009348,0.97859 2.907335,1.19396 v -1.19018 c -0.830651,-1.144843 -1.421859,-2.542843 -1.474257,-4.186426 -0.01352,-0.426955 -0.28058,-0.812343 -0.688463,-0.921922 -0.284196,-0.07562 -0.591208,-0.0077 -0.785752,0.219167 -0.497655,0.581866 -1.223536,1.685142 -1.811033,3.294728 z m 5.956885,1.794713 v 1.15617 0 0.0491 0 1.21285 c -2.274982,-0.19271 -6.922251,-1.65492 -8.205667,-5.939583 -0.123549,-0.408075 -0.47893,-0.710326 -0.901746,-0.710326 -0.295511,0 -0.572466,0.147366 -0.703432,0.415612 -0.411814,0.865254 -0.965369,2.610844 -0.965369,5.025217 0,4.4169 2.997112,6.81994 4.430181,7.66251 l -5.186018,1.42822 c -0.190974,0.0529 -0.344386,0.1965 -0.407743,0.38541 -0.06335,0.18891 -0.03167,0.40049 0.08598,0.5592 0.692213,0.92947 2.772646,2.65997 5.86705,2.65997 0.134861,0 0.269267,-0.0452 0.374253,-0.13225 l 2.828772,-2.28591 h 2.783864 c 3.307702,0 5.986761,-2.70531 5.986761,-6.04537 v -6.04537 l 1.118782,-1.696487 c 0.0489,-0.07562 0.07878,-0.166246 0.07878,-0.25691 0,-0.256911 -0.205908,-0.464743 -0.460238,-0.464743 h -3.730546 c -1.653829,0 -2.993354,1.352657 -2.993354,3.0227 z m 2.993355,-0.60454 a 0.59868243,0.6045412 0 1 1 0,1.20908 0.59868243,0.6045412 0 1 1 0,-1.20908 z"
+         id="path9633"
+         style="fill:#0f2d7f;fill-opacity:1;stroke:#0f2d7f;stroke-width:0.0376;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

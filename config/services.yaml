@@ -32,6 +32,15 @@ services:
 
     Symfony\Component\Ldap\LdapInterface: '@Symfony\Component\Ldap\Ldap'
 
+    App\Service\LdapImportService:
+        arguments:
+            $searchDn: '%env(LDAP_SEARCH_DN)%'
+            $searchPassword: '%env(LDAP_SEARCH_PASSWORD)%'
+            $lehrerDn: '%env(LDAP_TEACHERS_DN)%'
+            $studentsDn: '%env(LDAP_STUDENTS_DN)%'
+            $loginAttr: '%env(LDAP_LOGIN_ATTR)%'
+    
+
     App\Security\LdapAuthService:
         arguments:
             $searchDn: '%env(LDAP_SEARCH_DN)%'
@@ -40,3 +49,7 @@ services:
             $loginAttr: '%env(LDAP_LOGIN_ATTR)%'
 
     App\Security\LdapAuthServiceInterface: '@App\Security\LdapAuthService'
+    App\Security\LdapAuthenticator:
+        arguments:
+            $is2faEnabled: '%env(bool:APP_2FA_ENABLED)%'
+    

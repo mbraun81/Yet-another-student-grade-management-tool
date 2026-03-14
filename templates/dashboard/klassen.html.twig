@@ -1,0 +1,25 @@
+{% extends 'dashboard/index.html.twig' %}
+
+{% block title %}Klassen{% endblock %}
+
+{% block body %}
+<h1 style="margin-top:0;">Willkommen zum Kompetenztool!</h1>
+<p style="color:var(--ch-muted);margin-top:-.5rem;">Schuljahr 2025/26 &middot; Campus Hebebrandstraße</p>
+
+<div class="ch-dashboard-grid">
+    {% for klasse in klassen %}
+    <div class="card ch-stat-card">
+    	{# <img src="..." class="card-img-top" alt="..."> #}
+    	<div class="card-body">
+    	<h3 class="card-title"><span class="ch-stat-card__label">{{ klasse.label }}</span></h3>
+    	</div>
+        <span class="ch-stat-card__value">–</span>
+        <span class="ch-stat-card__desc">
+        {% for schueler in klasse.getSchuelers %}
+        	<span class="badge text-bg-secondary">{{ schueler.label }}</span>
+        {% endfor %}
+        </span>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

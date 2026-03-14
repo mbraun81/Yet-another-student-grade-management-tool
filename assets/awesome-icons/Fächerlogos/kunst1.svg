@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48.770046mm"
+   height="34.821003mm"
+   viewBox="0 0 48.770046 34.821003"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="Mathe1.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="sprachen.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0242632"
+     inkscape:cx="310.46707"
+     inkscape:cy="430.55339"
+     inkscape:window-width="1510"
+     inkscape:window-height="1000"
+     inkscape:window-x="401"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-11.527505,-184.53367)">
+    <g
+       id="g15">
+      <rect
+         style="fill:#a68abd;fill-opacity:1;stroke:#570073;stroke-width:0.605224;stroke-opacity:1"
+         id="rect9-5-2"
+         width="48.164822"
+         height="34.215775"
+         x="11.830117"
+         y="184.83627" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'Krona One';-inkscape-font-specification:'Krona One';fill:#570073;fill-opacity:1;stroke:none;stroke-width:0.465"
+         x="25.047358"
+         y="216.04066"
+         id="text11-1"><tspan
+           sodipodi:role="line"
+           id="tspan11-5"
+           style="font-size:5.64444px;fill:#570073;fill-opacity:1;stroke:none;stroke-width:0.465"
+           x="25.047358"
+           y="216.04066">Kunst</tspan></text>
+      <path
+         d="m 48.864171,200.12729 c 0,0.0334 0,0.0666 0,0.10002 -0.01926,1.35209 -1.617604,2.27077 -3.374821,2.27077 h -4.713198 c -1.275789,0 -2.310863,0.79644 -2.310863,1.77808 0,0.12595 0.01926,0.24819 0.04814,0.36673 0.1011,0.37784 0.31293,0.74087 0.519945,1.1076 0.293671,0.5112 0.582527,1.01869 0.582527,1.55582 0,1.17799 -1.039887,2.24854 -2.570834,2.29671 -0.168499,0.004 -0.337,0.007 -0.510315,0.007 -6.802602,0 -12.319786,-4.24518 -12.319786,-9.48313 0,-5.23794 5.517184,-9.48312 12.324601,-9.48312 6.807415,0 12.324601,4.24518 12.324601,9.48312 z m -18.486901,1.18539 a 1.5405751,1.1853907 0 1 0 -3.08115,0 1.5405751,1.1853907 0 1 0 3.08115,0 z m 0,-3.55617 a 1.5405751,1.1853907 0 1 0 0,-2.37078 1.5405751,1.1853907 0 1 0 0,2.37078 z m 7.702877,-3.55617 a 1.5405756,1.1853911 0 1 0 -3.081151,0 1.5405756,1.1853911 0 1 0 3.081151,0 z m 4.621725,3.55617 a 1.5405751,1.1853907 0 1 0 0,-2.37078 1.5405751,1.1853907 0 1 0 0,2.37078 z"
+         id="path1"
+         style="fill:#570073;fill-opacity:1;stroke-width:0.0422302" />
+    </g>
+  </g>
+</svg>

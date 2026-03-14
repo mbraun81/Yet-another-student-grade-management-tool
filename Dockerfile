@@ -23,7 +23,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         intl \
         opcache \
         zip \
-    && apt-get clean && rm -rf /var/lib/apt/lists/*
+    && apt-get clean && rm -rf /var/lib/apt/lists/* \
+    && pecl install xdebug \
+    && docker-php-ext-enable xdebug
 
 # Composer
 COPY --from=composer /usr/bin/composer /usr/bin/composer

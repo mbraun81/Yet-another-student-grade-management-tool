@@ -29,6 +29,7 @@ class LdapAuthenticator extends AbstractAuthenticator implements AuthenticationE
         private readonly LehrerRepository $lehrerRepository,
         private readonly EntityManagerInterface $em,
         private readonly RouterInterface $router,
+        private readonly bool $is2faEnabled,
     ) {
     }
 
@@ -73,13 +74,16 @@ class LdapAuthenticator extends AbstractAuthenticator implements AuthenticationE
     {
         $user = $token->getUser();
 
-        if ($user instanceof Lehrer && !$user->isTotpEnabled()) {
+        if ($this->is2faEnabled && $user instanceof Lehrer && !$user->isTotpEnabled()) {
             return new RedirectResponse($this->router->generate('app_2fa_setup'));
         }
 
         // scheb/2fa v8 creates the TwoFactorToken before onAuthenticationSuccess (via CheckPassportEvent)
         // but does not set a redirect on LoginSuccessEvent. We redirect manually so the controller is never reached.
-        return new RedirectResponse($this->router->generate('2fa_login'));
+        if($this->is2faEnabled) {
+            return new RedirectResponse($this->router->generate('2fa_login'));
+        }
+        return new RedirectResponse($this->router->generate('app_dashboard'));
     }
 
     public function onAuthenticationFailure(Request $request, AuthenticationException $exception): ?Response

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48.770042mm"
+   height="34.820999mm"
+   viewBox="0 0 48.770042 34.820999"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="Mathe1.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="gesellschaft-sonstiges.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0242632"
+     inkscape:cx="310.46707"
+     inkscape:cy="770.3098"
+     inkscape:window-width="1346"
+     inkscape:window-height="1000"
+     inkscape:window-x="269"
+     inkscape:window-y="7"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-3.8886159,-3.4682297)">
+    <g
+       id="g1"
+       inkscape:export-filename=".\gesell1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="fill:#516fbe;fill-opacity:1;stroke:#0f2d7f;stroke-width:0.605224;stroke-opacity:1"
+         id="rect9"
+         width="48.164822"
+         height="34.215775"
+         x="4.1912279"
+         y="3.7708416" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'Krona One';-inkscape-font-specification:'Krona One';fill:#0f2d7f;fill-opacity:1;stroke:none;stroke-width:0.465"
+         x="4.9797449"
+         y="35.872791"
+         id="text11-0"><tspan
+           sodipodi:role="line"
+           id="tspan11-3"
+           style="font-size:5.64444px;fill:#0f2d7f;fill-opacity:1;stroke:none;stroke-width:0.465"
+           x="4.9797449"
+           y="35.872791">Gesellschaft</tspan></text>
+      <path
+         d="m 16.543499,10.629589 a 2.8733152,2.6487137 0 1 1 5.74662,0 2.8733152,2.6487137 0 1 1 -5.74662,0 z m -0.410188,7.458968 c -0.513204,0.529718 -0.820938,1.23449 -0.820938,2.000723 0,0.766239 0.307796,1.470983 0.820938,2.000725 z m 7.409033,-2.331816 c -1.523905,1.243953 -2.48335,3.064944 -2.48335,5.089316 0,1.622336 0.615592,3.112236 1.641872,4.280512 v 1.016917 c 0,0.837179 -0.733747,1.513549 -1.641872,1.513549 h -3.283811 c -0.908188,0 -1.641872,-0.67637 -1.641872,-1.513549 v -1.267601 c -1.939495,-0.851371 -3.28381,-2.672363 -3.28381,-4.786605 0,-2.927771 2.5706,-5.297428 5.74662,-5.297428 h 1.641935 c 1.231375,0 2.370473,0.354728 3.304288,0.960164 z m 12.293695,10.386745 v -1.016917 c 1.026154,-1.168276 1.641875,-2.658176 1.641875,-4.280512 0,-2.024372 -0.95951,-3.845363 -2.483353,-5.094041 0.933818,-0.605424 2.072853,-0.960164 3.304288,-0.960164 h 1.641938 c 3.176016,0 5.74662,2.369657 5.74662,5.297428 0,2.114242 -1.344318,3.935234 -3.283807,4.786605 v 1.267601 c 0,0.837179 -0.73375,1.513549 -1.641879,1.513549 h -3.283807 c -0.908188,0 -1.641872,-0.67637 -1.641875,-1.513549 z m 0.410188,-15.513897 a 2.8733152,2.6487137 0 1 1 5.74662,0 2.8733152,2.6487137 0 1 1 -5.74662,0 z m 6.15712,7.458968 v 4.006178 c 0.513201,-0.534466 0.820938,-1.234491 0.820938,-2.000724 0,-0.766233 -0.307796,-1.470982 -0.820938,-2.000723 z M 29.268175,7.9808747 a 3.2837909,3.0271032 0 1 1 0,6.0542063 3.2837909,3.0271032 0 1 1 0,-6.0542063 z M 25.163492,20.846057 c 0,0.766234 0.307796,1.466252 0.820934,2.000725 v -4.001448 c -0.5132,0.534466 -0.820934,1.23449 -0.820934,2.000723 z m 7.388491,-2.000723 v 4.006179 c 0.5132,-0.534467 0.820937,-1.234492 0.820937,-2.000725 0,-0.766239 -0.307799,-1.470982 -0.820937,-2.000723 z m 3.28381,2.000723 c 0,2.114242 -1.344319,3.935234 -3.28381,4.786605 v 2.024373 c 0,0.837184 -0.73375,1.513548 -1.641873,1.513548 h -3.283808 c -0.908188,0 -1.641876,-0.676364 -1.641876,-1.513548 v -2.024373 c -1.939491,-0.851371 -3.283806,-2.672363 -3.283806,-4.786605 0,-2.927777 2.5706,-5.297428 5.746619,-5.297428 h 1.641933 c 3.17602,0 5.746621,2.369651 5.746621,5.297428 z"
+         id="path11487"
+         style="fill:#0d2f7d;fill-opacity:1;stroke-width:0.0492631" />
+    </g>
+  </g>
+</svg>

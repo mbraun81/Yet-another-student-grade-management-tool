@@ -11,6 +11,7 @@ services:
       - vendor_data:/var/www/html/vendor
       - ./var/cache/:/var/www/html/var/cache:rw
       - ./var/log:/var/www/html/var/log:rw
+      - ./docker/app/php.ini:/usr/local/etc/php/conf.d/99-app.ini:ro
     depends_on:
       db:
         condition: service_healthy
@@ -72,6 +73,8 @@ services:
     environment:
       PHPLDAPADMIN_LDAP_HOSTS: ldap
       PHPLDAPADMIN_HTTPS: "true"
+    volumes:
+      - ./docker/phpldapadmin/php-upload.ini:/etc/php/7.4/apache2/conf.d/99-upload.ini:ro
     depends_on:
       - ldap
     networks:

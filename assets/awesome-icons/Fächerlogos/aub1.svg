@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48.770042mm"
+   height="34.821003mm"
+   viewBox="0 0 48.770042 34.821003"
+   version="1.1"
+   id="svg1"
+   inkscape:export-filename="Mathe1.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="gesellschaft-sonstiges.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:zoom="1.0242632"
+     inkscape:cx="310.46707"
+     inkscape:cy="274.34354"
+     inkscape:window-width="1510"
+     inkscape:window-height="1000"
+     inkscape:window-x="401"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs1" />
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-3.7256206,-39.265757)">
+    <g
+       id="g28"
+       transform="translate(-7.7494728,-10.590946)">
+      <rect
+         style="fill:#7b90b7;fill-opacity:1;stroke:#0f2d7f;stroke-width:0.605224;stroke-opacity:1"
+         id="rect9-3"
+         width="48.164822"
+         height="34.215775"
+         x="11.777705"
+         y="50.159313" />
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'Krona One';-inkscape-font-specification:'Krona One';fill:#0f2d7f;fill-opacity:1;stroke:none;stroke-width:0.465"
+         x="29.310871"
+         y="82.221931"
+         id="text11-92"><tspan
+           sodipodi:role="line"
+           id="tspan11-79"
+           style="font-size:5.64444px;fill:#0f2d7f;fill-opacity:1;stroke:none;stroke-width:0.465"
+           x="29.310871"
+           y="82.221931">AuB</tspan></text>
+      <path
+         d="m 28.972174,58.824373 a 1.6296972,1.663754 0 1 1 3.259394,0 1.6296972,1.663754 0 1 1 -3.259394,0 z m 2.172943,6.713934 v 2.256468 l 1.731514,1.767736 c 0.241042,0.246082 0.400777,0.561516 0.454979,0.904663 l 0.516085,3.150738 c 0.09855,0.603109 -0.302226,1.175027 -0.892963,1.275543 -0.590777,0.100523 -1.150961,-0.308497 -1.249429,-0.9116 L 31.219813,71.00443 28.52401,68.252305 c -0.407346,-0.415937 -0.638285,-0.980919 -0.638285,-1.570168 v -3.05368 c 0,-1.123034 0.889512,-2.031163 1.989553,-2.031163 0.818266,0 1.578799,0.415937 2.033739,1.109168 l 1.609308,2.464437 0.342879,0.173299 v -2.637743 c 0,-0.61351 0.485529,-1.109167 1.086491,-1.109167 h 4.345845 c 0.600961,0 1.086451,0.495657 1.086451,1.109167 v 2.641208 l 0.342874,-0.173299 1.609353,-2.467902 c 0.451532,-0.693231 1.215473,-1.109168 2.033696,-1.109168 1.100041,0 1.989592,0.908129 1.989592,2.031163 v 3.05368 c 0,0.589249 -0.227487,1.154231 -0.634875,1.570168 l -2.6958,2.752125 -0.48553,2.977425 c -0.09855,0.603109 -0.658655,1.012116 -1.249432,0.9116 -0.590737,-0.100529 -0.991388,-0.672434 -0.892919,-1.275543 l 0.516042,-3.150738 c 0.05419,-0.343166 0.213939,-0.658567 0.45498,-0.904663 l 1.731555,-1.767736 v -2.256468 l -0.645101,0.987855 c -0.156045,0.242644 -0.373677,0.436733 -0.628104,0.564982 l -2.023558,1.032912 c -0.0813,0.04505 -0.166304,0.07626 -0.257876,0.09705 -0.08829,0.02093 -0.179858,0.03101 -0.268143,0.02769 h -4.305151 c -0.085,0.0033 -0.16959,-0.0072 -0.254592,-0.02431 -0.09855,-0.02093 -0.190122,-0.05545 -0.275124,-0.104007 L 32.421732,67.087566 C 32.16714,66.959331 31.953201,66.761757 31.793629,66.522584 l -0.645102,-0.987855 z m -4.811008,7.847369 1.622901,-4.142051 1.67045,1.705346 -1.276613,3.25819 c -0.224205,0.568441 -0.855592,0.845734 -1.41241,0.616969 -0.556818,-0.228764 -0.828411,-0.870007 -0.604328,-1.438454 z M 43.639422,57.160619 a 1.6296975,1.6637542 0 1 1 0,3.327508 1.6296975,1.6637542 0 1 1 0,-3.327508 z m 2.644885,12.083006 1.6229,4.142051 c 0.224206,0.568447 -0.0476,1.213161 -0.604324,1.441926 -0.556818,0.228765 -1.188331,-0.04856 -1.412416,-0.616982 l -1.276613,-3.258177 1.670453,-1.705347 z"
+         id="path6527"
+         style="fill:#0d2f7d;fill-opacity:1;stroke-width:0.0343048" />
+    </g>
+  </g>
+</svg>
